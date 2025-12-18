@@ -1,9 +1,11 @@
-* {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
+    background-color: #F3F3F3;
 }
+
 
 /*styling til navbar*/
 .navbar {
@@ -18,13 +20,15 @@
 .logo {
     font-size: 32px;
     font-family: Righteous, sans-serif;
+    text-decoration: none;
+    color: #0D0805;
 }
 
 /* Desktop menu */
 .menu a {
     margin-left: 30px;
     text-decoration: none;
-    color: black;
+    color: #0D0805;
     font-size: 18px;
     font-weight: 500;
 }
@@ -65,13 +69,64 @@
 }
 
 
-/*styling til tekst og cards*/
+/*styling af forside billede*/
+.boks-med-billede{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+}
 
-.contact {
+.boks-med-billede img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*styling til tekst til forside*/
+.velkommenTekst{
+    padding:80px 100px;
+}
+
+.velkommenTekst h1{
+    font-size:48px;
+    margin-bottom: 20px;
+    background-color: #F1DE78;
+}
+
+.infoTekst{
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.tekstOgBillede{
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.GoodVibes{
+    height: auto;
+    width: 500px;
+    margin-top: -100px;
+    object-fit: cover;
+    clip-path: inset(130px 0px 130px 0px);
+}
+
+
+
+/*styling til tekst og cards på kontakt siden*/
+
+.kontaktInformation {
     padding: 80px 100px;
 }
 
-.contact h1 {
+.kontaktInformation h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -82,17 +137,20 @@
     line-height: 1.6;
     margin-bottom: 60px;
 }
+
 /* styling af alle cards på en gang*/
 .kontakt-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 10px;
     justify-content: center;
+    margin-bottom: 30%;
 }
+
 /* styling af hvert card*/
 .card {
     background-color: #47588C;
-    color: white;
+    color: #F3F3F3;
     padding: 50px 30px;
     max-width: 300px;
     width: 100%;
@@ -110,8 +168,85 @@
 }
 
 
+/* styling af teksten: De tre iværksættermiljø*/
+
+.DeTreI{
+    font-size:40px;
+    margin: 20px 100px;
+    background-color: #F1DE78;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+
+/* styling footer*/
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background-color: #f2e58c;
+    padding: 30px 100px;
+    justify-content: center;
+}
+
+.Ukendt-person{
+    clip-path: circle(50%);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    margin-top: -120px;
+    z-index: 2;
+}
+
+.profile-info{
+    text-align: center;
+}
+
+/* Text */
+.TobiasHL {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.denMørkeDel{
+    background-color: #0D0805;
+    padding: 30px 100px;
+}
+
+.C-S{
+    color: #F3F3F3;
+    font-family: Righteous, sans-serif;
+}
+
+.footerBrødtekst{
+    color: #F3F3F3;
+    max-width: 450px;
+}
+.NyhedsbrevKnap{
+    background-color: #BF6068;
+    color: #F3F3F3;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 40px 0;
+}
+
 @media (max-width: 900px) {
     .kontakt-cards{
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
