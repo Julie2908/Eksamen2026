@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+.navbar {
+    background-color: #f2e58c; /* gul farve */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
