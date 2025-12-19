@@ -176,6 +176,21 @@ body{
 .cardMedBillede{
     border: 2px solid black;
     background-color: #F3F3F3;
+    text-align: center;
+}
+
+.LæsMereKnap{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    background-color: #BF6068;
+    color: #F3F3F3;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 10px;
 }
 
 /* Mobil */
@@ -229,8 +244,6 @@ body{
     display: block;
     object-fit: cover;
 }
-
-
 
 
 /* styling footer*/
@@ -352,7 +365,7 @@ margin-bottom:40px;
     background-color: #F1DE78;
 }
 
-.cardMedBillede p{
+.cardMedBillede2 p{
     font-style: italic;
 }
 /* Mobil */
@@ -385,3 +398,5 @@ margin-bottom:40px;
         clip-path: inset(100px 0px 100px 0px);
     }
 }
+
+
