@@ -1,0 +1,56 @@
+
+/*styling til tekst og cards på kontakt siden*/
+
+.kontaktInformation {
+    padding: 80px 100px;
+}
+
+.kontaktInformation h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.kontaktOsTekst {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+/* styling af alle cards på en gang*/
+.kontakt-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30%;
+}
+
+/* styling af hvert card*/
+.card {
+    background-color: #47588C;
+    color: #F3F3F3;
+    padding: 50px 30px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+    .kontakt-cards{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+

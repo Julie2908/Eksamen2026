@@ -17,6 +17,11 @@ body{
     position: relative;
 }
 
+.navbar a{
+    text-decoration: none;
+    color: #0D0805;
+}
+
 .logo {
     font-size: 32px;
     font-family: Righteous, sans-serif;
@@ -84,21 +89,25 @@ body{
 }
 
 
-
 /*styling til tekst til forside*/
 .velkommenTekst{
-    padding:80px 100px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 .velkommenTekst h1{
     font-size:48px;
+    padding: 10px 20px;
     margin-bottom: 20px;
+    margin-top: 40px;
     background-color: #F1DE78;
+    margin-right: 35%;
 }
 
 .infoTekst{
+    display: flex;
     max-width: 700px;
-    font-size: 18px;
+    font-size: 100%;
     line-height: 1.6;
     margin-bottom: 60px;
     margin-top: 20px;
@@ -118,65 +127,109 @@ body{
     clip-path: inset(130px 0px 130px 0px);
 }
 
-
-
-/*styling til tekst og cards på kontakt siden*/
-
-.kontaktInformation {
-    padding: 80px 100px;
-}
-
-.kontaktInformation h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.kontaktOsTekst {
-    max-width: 700px;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 60px;
-}
-
-/* styling af alle cards på en gang*/
-.kontakt-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 30%;
-}
-
-/* styling af hvert card*/
-.card {
-    background-color: #47588C;
-    color: #F3F3F3;
-    padding: 50px 30px;
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-}
-
-.card h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.card p {
-    font-size: 16px;
-    margin-bottom: 12px;
-}
-
-
-/* styling af teksten: De tre iværksættermiljø*/
+/* styling af teksten: De tre iværksættermiljøer*/
 
 .DeTreI{
     font-size:40px;
-    margin: 20px 100px;
     background-color: #F1DE78;
     text-align: center;
     padding: 40px 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
+
+
+/*styling af details bokse*/
+.custom-details{
+    width: 60%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    background-color: #BF6068;
+    border: 2px;
+    border-radius: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+.custom-details summary{
+    font-size: 30px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.Slagelse-Køge-Næstved{
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+
+.alleCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 50px 200px 50px;
+}
+
+.cardMedBillede{
+    border: 2px solid black;
+    background-color: #F3F3F3;
+}
+
+/* Mobil */
+.alleCards{
+    padding: 10px;
+    grid-column: col-start / span 4;
+}
+
+/* styling af nyheds card*/
+
+.nyhed{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-bottom: 200px;
+}
+
+.nyhed-box{
+    background-color: #F3F3F3;
+    border: 2px solid #0D0805;
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px 50px;
+    box-sizing: border-box
+}
+
+
+.nyhed-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 30px;
+}
+
+.nyhed-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.nyhed-tekst {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.nyhed-billede {
+    flex: 1;
+}
+
+.nyhed-billede img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 
 
 
@@ -185,10 +238,11 @@ body{
     display: flex;
     align-items: center;
     gap: 80px;
-    background-color: #f2e58c;
+    background-color: #F1DE78;
     padding: 30px 100px;
     justify-content: center;
 }
+
 
 .Ukendt-person{
     clip-path: circle(50%);
@@ -212,14 +266,36 @@ body{
     margin-bottom: 10px;
 }
 
-.denMørkeDel{
+.containerSort{
+    display: flex;
+    justify-content: space-between;
     background-color: #0D0805;
     padding: 30px 100px;
 }
 
+.tekst{
+    width: 45%;
+}
 .C-S{
     color: #F3F3F3;
     font-family: Righteous, sans-serif;
+}
+
+.genveje{
+    width: 45%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.genveje a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.genveje li{
+    margin-bottom: 50px;
+
 }
 
 .footerBrødtekst{
@@ -244,9 +320,68 @@ body{
     margin: 40px 0;
 }
 
+
+/* styling af event og workshop siden*/
+.ForsideBillede{
+display: block;
+margin-left: auto;
+margin-right: auto;
+    width:100%;
+margin-bottom:40px;
+}
+
+.EogWtekst{
+    display: flex;
+    text-align: center;
+    max-width: 1500px;
+    font-size: 100%;
+    line-height: 1.6;
+    margin: 10px 170px 100px 170px;
+}
+
+.EventsOgWorkshops{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 50px 200px 50px;
+}
+
+.cardMedBillede2{
+    border: 2px solid black;
+    background-color: #F1DE78;
+}
+
+.cardMedBillede p{
+    font-style: italic;
+}
+/* Mobil */
+.alleCards{
+    padding: 10px;
+    grid-column: col-start / span 4;
+}
+
+
+
+
+@media (max-width: 900px){
+    .velkommenTekst h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:900px){
+    .infoTekst{
+        font-size: 80%;
+    }
+}
+
 @media (max-width: 900px) {
-    .kontakt-cards{
-        grid-template-columns: 1fr;
-        justify-items: center;
+    .GoodVibes {
+        height: auto;
+        width: 300px;
+        margin-top: -100px;
+        object-fit: cover;
+        clip-path: inset(100px 0px 100px 0px);
     }
 }
